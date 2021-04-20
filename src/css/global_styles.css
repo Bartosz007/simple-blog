@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../wallpaper.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+* {
+  font-family: "Cambria Math";
+}
+.App {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+.App-header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}
+.App-header * {
+  width: 25%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+  margin: 0;
+}
+.App-header *:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+.Global-container {
+  width: 60vw;
+  height: 100%;
+  margin-top: 10vh;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.Login-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.Login-container .login-form {
+  width: 35%;
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1em;
+}
+.Login-container .login-form * {
+  border: 0;
+  outline: 0;
+  border-radius: 1em;
+  width: 80%;
+  height: 2em;
+  font-family: "Cambria Math";
+  font-size: 1em;
+  text-align: center;
+}
+.Login-container .login-form button {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.Login-container .login-form button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=global_styles.css.map */

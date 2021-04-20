@@ -1,0 +1,52 @@
+.ArticleList-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+}
+.ArticleList-container .article {
+  text-decoration: none;
+  color: white;
+  font-family: "Cambria Math";
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.ArticleList-container .article:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.ArticleList-container .article_image {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ArticleList-container .article_image img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 1em;
+}
+.ArticleList-container .article_content {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.ArticleList-container .article_content .article_info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-content: space-evenly;
+}
+.ArticleList-container .article_content .article_info * {
+  width: 40%;
+}
+/*# sourceMappingURL=article_list_styles.css.map */

@@ -1,0 +1,142 @@
+.Article-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+.Article-container .article_entire {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cambria Math";
+}
+.Article-container .article_entire .edit_section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Article-container .article_entire .edit_section * {
+  width: 2em;
+  height: 2em;
+}
+.Article-container .article_entire .image_section {
+  width: 80%;
+  height: 30%;
+}
+.Article-container .article_entire .image_section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Article-container .article_entire .article_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.Article-container .article_entire .article_section h2 {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.Article-container .article_entire .article_section h3 {
+  margin-top: 1em;
+}
+.Article-container .article_entire .comment_section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Article-container .article_entire .comment_section .comment {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  border-bottom: 1px black solid;
+  padding-top: 1em;
+}
+.Article-container .article_entire .comment_section .comment .user_container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Article-container .article_entire .comment_section .comment .user_container .user_photo {
+  width: 100%;
+  height: 100%;
+}
+.Article-container .article_entire .comment_section .comment .user_container .user_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Article-container .article_entire .comment_section .comment .comment_container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.Article-container .article_entire .comment_section .comment .comment_container .comment_content {
+  width: 80%;
+  font-family: "Cambria Math";
+  text-align: center;
+}
+.Article-container .article_entire .comment_section .comment .comment_container .comment_data {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Article-container .article_entire .comment_section .comment .comment_container .comment_data * {
+  width: 30%;
+  text-align: center;
+}
+.Article-container .article_entire .comment_section .add_comment {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 1em;
+}
+.Article-container .article_entire .comment_section .add_comment form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Article-container .article_entire .comment_section .add_comment form textarea,
+.Article-container .article_entire .comment_section .add_comment form button {
+  height: 80%;
+  outline: 0;
+  border: 0;
+}
+.Article-container .article_entire .comment_section .add_comment form textarea {
+  background-color: white;
+  resize: none;
+  width: 60%;
+  font-family: "Cambria Math";
+  font-size: 1em;
+}
+.Article-container .article_entire .comment_section .add_comment form button {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+  font-family: "Cambria Math";
+  font-size: 1.5em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.Article-container .article_entire .comment_section .add_comment form button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=article_styles.css.map */

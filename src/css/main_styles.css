@@ -1,0 +1,25 @@
+.Main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+.Main-container * {
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-family: "Cambria Math";
+}
+.Main-container p {
+  margin-bottom: 0.2em;
+}
+.Main-container .Main-header {
+  font-size: 4em;
+}
+.Main-container .Main-subheader {
+  font-size: 2em;
+  border-top: 1px white solid;
+}
+/*# sourceMappingURL=main_styles.css.map */

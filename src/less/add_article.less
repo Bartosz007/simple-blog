@@ -1,0 +1,62 @@
+@import "Variables";
+
+.AddArticle-container{
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  color:@fontColor;
+
+  .add_form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: @fontFamily;
+    p{
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    input,textarea{
+      border: 0;
+      outline: 0;
+      height: 2em;
+      width: 25em;
+      border-radius: 1em;
+      text-align: center;
+      font-family: @fontFamily;
+      font-size: 1em;
+    }
+
+    input[name="photo"]{
+      border-radius: 0;
+    }
+    textarea{
+      resize: none;
+      height: 20em;
+      width: 25em;
+      border-radius: 1em;
+    }
+
+    button{
+      border: 0;
+      outline: 0;
+      height: 2em;
+      width: 12em;
+      border-radius: .8em;
+      background-color: @backgroundColor;
+      cursor: pointer;
+      font-size: 1.5em;
+      font-family: @fontFamily;
+      color: @fontColor;
+    }
+    button:hover{
+      background-color: @backgroundHoverColor;
+    }
+
+
+  }
+
+}

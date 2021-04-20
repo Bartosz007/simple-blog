@@ -1,0 +1,168 @@
+@import "Variables";
+
+.Article-container{
+  width: 100%;
+  background-color: @backgroundColor;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+
+  .article_entire{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: @fontFamily;
+
+    .edit_section{
+      position: absolute;
+      right:0;
+      top:0;
+      width: 5vw;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      *{
+        width: 2em;
+        height: 2em;
+      }
+    }
+
+    .image_section{
+      width: 80%;
+      height: 30%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .article_section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2{
+        margin-top: 1em;
+        margin-bottom: 0;
+      }
+      h3{
+        margin-top: 1em;
+      }
+
+      text-align: center;
+    }
+
+    .comment_section{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .comment{
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        border-bottom: 1px black solid;
+        padding-top: 1em;
+
+        .user_container{
+          width: 20%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .user_photo{
+            width: 100%;
+            height: 100%;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .comment_container{
+          width: 80%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background-color: @backgroundColor;
+
+          .comment_content{
+            width: 80%;
+            font-family: @fontFamily;
+            text-align: center;
+          }
+
+          .comment_data{
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            *{
+              width: 30%;
+              text-align: center;
+            }
+          }
+
+        }
+
+
+      }
+
+
+      .add_comment{
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        background-color: @backgroundColor;
+        margin-top: 1em;
+
+
+        form{
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: space-evenly;
+          align-items: center;
+
+          textarea, button{
+            height: 80%;
+            outline: 0;
+            border:0;
+          }
+          textarea{
+            background-color: white;
+            resize: none;
+            width: 60%;
+            font-family: @fontFamily;
+            font-size: 1em;
+          }
+
+          button{
+            background-color: @backgroundColor;
+            width: 30%;
+            font-family: @fontFamily;
+            font-size: 1.5em;
+            border-radius: 1em;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: @backgroundHoverColor;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

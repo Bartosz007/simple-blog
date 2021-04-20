@@ -1,0 +1,55 @@
+.AddArticle-container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  color: white;
+}
+.AddArticle-container .add_form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Cambria Math";
+}
+.AddArticle-container .add_form p {
+  font-size: 2.5em;
+  margin: 0;
+}
+.AddArticle-container .add_form input,
+.AddArticle-container .add_form textarea {
+  border: 0;
+  outline: 0;
+  height: 2em;
+  width: 25em;
+  border-radius: 1em;
+  text-align: center;
+  font-family: "Cambria Math";
+  font-size: 1em;
+}
+.AddArticle-container .add_form input[name="photo"] {
+  border-radius: 0;
+}
+.AddArticle-container .add_form textarea {
+  resize: none;
+  height: 20em;
+  width: 25em;
+  border-radius: 1em;
+}
+.AddArticle-container .add_form button {
+  border: 0;
+  outline: 0;
+  height: 2em;
+  width: 12em;
+  border-radius: 0.8em;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: "Cambria Math";
+  color: white;
+}
+.AddArticle-container .add_form button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=add_article.css.map */
